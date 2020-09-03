@@ -1,4 +1,3 @@
-import discord
 import nltk
 from nltk.stem.lancaster import LancasterStemmer
 stemmer = LancasterStemmer()
@@ -10,10 +9,6 @@ import json
 import random
 import pickle
 from sklearn.linear_model import LinearRegression
-
-llave = "NzQ5NjU0NDU1NzM3Mzg0OTkx.X0vIHg.As6-YpoaRP5ckRmcXLDY-xczmf8"
-
-
 with open("contenido.json", encoding='utf-8') as archivo:
     datos = json.load(archivo)
 ############Modelo Prediccion Dietas
@@ -34,7 +29,7 @@ X = np.array([sexo, objetivo, altura, peso, edad, calc, actividad, cena, azucar,
 Y = np.array(menu)
 reg = LinearRegression()
 reg = reg.fit(X,Y)
-
+#######Chatbot
 palabras = []
 tags = []
 auxX = []
@@ -120,7 +115,4 @@ def mainBot():
                 prediccion = round((reg.predict(
                     [[sexo, objetivo, altura, peso, edad, calc, actividad, cena, azucar, refresco, sal]])).item(0))
                 print("La mejor dieta para ti es la dieta ", prediccion)
-
-
-
 mainBot()

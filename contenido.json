@@ -1,0 +1,22 @@
+{"contenido": [
+    {"tag": "saludo",
+      "patrones": ["hola", "saludos", "hello", "como estas"],
+      "respuestas": ["Hola que tal", "¿Como te va?", "¿Que onda?"]
+    },
+    {"tag": "despedida",
+        "patrones": ["adios", "salir", "Hasta la proxima", "nos vemos", "gracias"],
+        "respuestas": ["Fue un gusto atenderte", "Cuidate", "Adios", "Hasta la proxima"]
+    },
+    {"tag": "actividades",
+        "patrones": ["Que puedes hacer", "que haces", "quien eres", "cual es tu servicio", "servicios", "quiero una dieta"],
+        "respuestas": ["Soy Berry y estoy aqui para ayudarte con tu alimentacion. Si quieres que te de una dieta solo tienes que escribir 'dieta'"]
+    }
+  ,{"tag": "respuestasBien",
+        "patrones": ["bien", "estoy bien", "bien y tu que tal", "bien gracias", "me encuentro bien"],
+        "respuestas": ["Me alegro que estas bien. ¿En que te puedo ayudar?"]
+    },{"tag": "respuestasMal",
+        "patrones": ["mal", "estoy mal", "mal y tu que tal", "no tan bien", "me encuentro muy mal"],
+        "respuestas": ["Que mal saber que estas mal. ¿Hay algo que pueda hacer por ti?"]
+    }
+  ]
+}
